@@ -1,0 +1,85 @@
+
+        <!doctype html>
+        <html lang="pt-br">
+          <head>
+            <title>Atividade fixação</title>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+         
+            <style></style>
+        
+          </head>
+          <body>
+              
+            <div class="container mt-5">
+
+                <div id="div" class="form-group">
+                    <input class="form-control" type="text" id="field">
+                    <button class="btn btn-primary mt-2" type="button" onclick="realizarMagica()">Adicionar</button>
+                    <button class="btn btn-success mt-2" type="button" onclick="ordenar()">Ordenar</button>
+                </div>
+            </div>
+
+            <script>
+        
+               var objetos = ['Cadeira', 'Impressora', 'Garfo']
+
+                function realizarMagica(){
+
+                    console.log(document.getElementById('div').value)
+
+                    var valor_campo = document.getElementById('field').value
+
+                    if(valor_campo === ''){
+                        alert('Informe um valor válido')
+                    }else{
+
+                        if(objetos.indexOf(valor_campo) === -1){
+
+                            objetos.push(valor_campo)
+                            console.log(objetos)
+
+                            valor_campo = ''
+
+                           document.getElementById('div').innerHTML += '<div class="alert alert-success mt-1">Objeto adicionado com sucesso!</div>'
+
+
+                        }else{
+
+                            document.getElementById('div').innerHTML += '<div class="alert alert-danger mt-1">Objeto já existente!</div>'
+
+
+                        }
+
+                    }
+
+                }
+
+                 function ordenar(){
+
+                    objetos.sort()
+                    console.log(objetos)
+
+                    for(var i = 0; i<objetos.length; i++){
+                        document.getElementById('div').innerHTML += '<table class="table table-striped table-dark"><thead><tr><td>Objeto: '+ i +'</td></tr></thead><tbody><tr><td>'+ objetos[i] +'</td></tr></tbody></table>'
+                    }
+
+
+                }
+
+            </script>
+        
+        
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+          </body>
+        </html>
+        
+      

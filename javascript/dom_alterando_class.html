@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+
+        <style>
+        
+            .estilo1{
+                background: red;
+                color: white;
+            }
+
+            .estilo2{
+                width: 400px;
+                height: 50px;
+                background: blue;
+                color: white;
+                text-align: center;
+                font-size: 50px;
+                padding: 25px;
+            }
+        
+        </style>
+
+        <script>
+        
+            function modificadorClasse(){
+                document.getElementById('mensagem').className = 'estilo2'
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+       
+        <div id="mensagem" class="estilo1">Mudando estilo do botão</div> 
+        <hr>
+        <button type="button" onclick="modificadorClasse()">Modificar class</button>
+    </body> 
+</html>

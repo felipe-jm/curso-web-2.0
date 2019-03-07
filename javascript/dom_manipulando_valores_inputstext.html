@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+
+        <script>
+        
+            function distribuirCaracteres(){
+
+                //selecionar o valor digitado
+                var caracter = document.getElementById('in').value
+                //limpar o input
+                document.getElementById('in').value = ''
+
+                caracter.trim()
+
+                if(isNaN(parseInt(caracter))){
+                    document.getElementById('letras').value = caracter
+                }else{
+                    document.getElementById('numeros').value = caracter
+                }
+
+            }
+
+        </script>
+        
+    </head>
+    <body>
+       
+        <input id="in" type="text" placeholder="Digite um caracter aqui" onkeyup="distribuirCaracteres()">
+
+        <hr>
+
+        <span>Letras</span>
+        <input id="letras" type="text" placeholder="Digite um caracter aqui" disabled>
+
+        <span>Números</span>
+        <input id="numeros" type="text" placeholder="Digite um caracter aqui" disabled>
+
+    </body>
+</html>

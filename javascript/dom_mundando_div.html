@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+
+        <script>
+        
+            function changeBackgroundColor(color, width, height){
+
+                document.getElementById('div').style.background = color
+                document.getElementById('div').style.width = width
+                document.getElementById('div').style.height = height 
+
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+       
+        <h3>Manipular div</h3>
+
+        <button type="button" onclick="changeBackgroundColor('#FF0000', '100px', '100px')" style= "background: red;">Vermelho</button>
+
+        <button type="button" onclick="changeBackgroundColor('#00FF00', '200px', '200px')" style="background: blue;">Azul</button>
+
+        <button type="button" onclick="changeBackgroundColor('#0000FF', '300px', '300px')" style="background: green;">Verde</button>
+
+        <div id="div" style="width: 300px; height: 300px; border: 1px solid black; margin-top: 20px;"></div>
+        
+    </body> 
+</html>

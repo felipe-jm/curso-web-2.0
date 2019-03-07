@@ -1,0 +1,92 @@
+/* Formatações padrão da página */
+body, html{
+	margin: 0;
+	height: 100%;
+	font: 16px "Lato", sans-serif;
+	color: #777;
+}
+
+.conteudo{
+	color: #777;
+	background-color: white;
+	text-align: justify;
+	padding: 50px 80px;
+}
+
+h3{
+	text-transform: uppercase;
+	color: #111;
+	text-align: center;
+}
+
+p{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/* EFEITO PARALLAX */
+
+.caixa1, .caixa2, .caixa3, 
+.caixa4, .caixa5, .caixa6, 
+.caixa7, .caixa8, .caixa9{
+	position: relative;
+	height: 100%;
+	opacity: 0.8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.caixa1{
+	background-image: url(../imagens/bodvar.png);
+}
+
+.caixa2{
+	background-image: url(../imagens/diana.png);
+}
+
+.caixa3{
+	background-image: url(../imagens/orion.png);
+}
+
+.caixa4{
+	background-image: url(../imagens/lordvraxx.png);
+}
+
+.caixa5{
+	background-image: url(../imagens/gnash.png);
+}
+
+.caixa6{
+	background-image: url(../imagens/hattori.png);
+}
+
+.caixa7{
+	background-image: url(../imagens/jhala.png);
+}
+
+.caixa8{
+	background-image: url(../imagens/sentinel.png);
+}
+
+.caixa9{
+	background-image: url(../imagens/koji.png);
+}
+
+.conteudo-titulo{
+	position: absolute;
+	left: 0;
+	top: 45%;
+	width: 100%;
+	text-align: center;
+}
+
+.conteudo-titulo span.titulo{
+	background-color: #111;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 5px;
+	color: #fff;
+	text-transform: uppercase;
+}

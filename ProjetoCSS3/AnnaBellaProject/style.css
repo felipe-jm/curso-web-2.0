@@ -1,0 +1,36 @@
+body{
+	background-image: url('imagens/fundo.png');
+}
+
+a{
+	text-decoration: none;
+	padding: 10px;
+	color: ;
+}
+
+h2{
+	padding: 10px;
+}
+
+h3{
+	padding: 10px;
+	text-align: center;
+}
+
+p{
+	padding: 20px;
+}
+
+.topo{
+	background-color: #ebebe0;
+	width: 66%%
+}
+
+.links{
+	color: blue;
+	padding: 20px;
+}
+
+.meio{
+	background-color: #ffffb3;
+}
